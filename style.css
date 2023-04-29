@@ -1,0 +1,82 @@
+:root{
+    --backgroundColor:#ffff;
+    --blackColor:rgba(10, 10, 10, 0.551);
+    --mainColor: #436e6b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--backgroundColor);
+}
+/* ENTER LOCATION  */
+.Container{
+    width: 80%;
+    margin: 50px;
+    font-size: 20px;
+}
+label{
+    font-weight: bold;
+}
+#locationInput{
+    padding: 8px;
+    width: 200px;
+    border-style: solid;
+    border-color: var(--blackColor);
+    outline-color: var(--blackColor);
+}
+#viewWeatherButton{
+    padding: 8px 25px;
+    background-color: var(--mainColor);
+    color: white;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--mainColor);
+    border-radius: 5px;
+    transition-delay: 0.1s;
+
+}
+#viewWeatherButton:hover{
+    cursor: pointer;
+    background-color: white;
+    color: var(--mainColor);
+    transition-delay: 0.1s;
+
+}
+
+/* WEATHER INFORMATION */
+.title{
+color: var(--mainColor);
+}
+.viewLocatonWeather{
+    margin-left: 20px;
+}
+img{
+    position: relative;
+    top: 24px;
+    margin-left: 20px;
+}
+h1{
+    display: inline;
+}
+h3 {
+    margin-top: 20px;
+}
+
+@media(max-width:768px){
+    .Container{
+        width: 90%;
+        margin: 30px;
+        font-size: 18px;
+    }
+    #locationInput{
+        padding: 7px;
+        width: 190px;
+    } 
+    #viewWeatherButton{
+        padding: 13px 25px;
+        margin: 20px 30% ;
+        margin-bottom: -20px;
+    }
+}
